@@ -120,7 +120,9 @@ export default function App() {
 
               <h2 className="text-2xl font-semibold mt-8 mb-2 text-indigo-600 dark:text-indigo-400">Contact</h2>
               <p className="text-sm">📧 <a href={socials.email} className="underline">vedantjpatel124@gmail.com</a></p>
-              <!-- <p className="text-sm">📍 Ottawa, ON | 📞 +1-647-835-9523</p> -->
+              <!--
+                <p className="text-sm">📍 Ottawa, ON | 📞 +1-647-835-9523</p>
+              -->
             </div>
           </motion.section>
         </main>
