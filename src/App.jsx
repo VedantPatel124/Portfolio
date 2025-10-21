@@ -91,11 +91,26 @@ export default function App(){
             <div className='w-full text-left mt-6'>
               <h3 className='text-sm font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-400 mb-2'>Technical Proficiency</h3>
               <div className='space-y-3'>
-                {['AWS & Cloud Services','Docker & Kubernetes','Terraform & IaC','CI/CD & Jenkins','Linux & System Support','Python & Bash'].map((s,i)=>(
-                  <div key={i}>
-                    <div className='flex justify-between text-sm font-medium'><span>{s}</span><span className='opacity-80'>—</span></div>
+                {[
+                  { name: 'AWS & Cloud Services', level: 85 },
+                  { name: 'Docker & Kubernetes', level: 80 },
+                  { name: 'Terraform & IaC', level: 78 },
+                  { name: 'CI/CD & Jenkins', level: 82 },
+                  { name: 'Linux & System Support', level: 88 },
+                  { name: 'Python & Bash', level: 84 },
+                  ].map((skill, i) => (
+                    <div key={i}>
+                    <div className='flex justify-between text-sm font-medium'>
+                      <span>{skill.name}</span>
+                      <span className='opacity-80'>{skill.level}%</span>
+                    </div>
                     <div className='w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden'>
-                      <motion.div initial={{width:0}} whileInView={{width:'80%'}} transition={{duration:1.1}} className='h-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500'></motion.div>
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${skill.level}%` }}
+                        transition={{ duration: 1 }}
+                        className='h-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500'
+                      ></motion.div>
                     </div>
                   </div>
                 ))}
