@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-  height: 100%;
-}
+/* smooth scrolling and subtle typography */
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
 
-/* small tweaks */
-.prose a { color: inherit; text-decoration: underline; }
+/* tweak for project links */
+a { color: inherit; text-decoration: underline; }
+
+/* shadow glow utility */
+.shadow-glow { box-shadow: 0 6px 18px rgba(99,102,241,0.12); }
