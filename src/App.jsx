@@ -158,7 +158,7 @@ export default function App(){
 
             <h3 className='mt-6 text-xl font-semibold'>Contact</h3>
             <p className='text-sm mt-2'>📧 <a href='mailto:vedantjpatel124@gmail.com' className='underline'>vedantjpatel124@gmail.com</a></p>
-            <p className='text-sm'>📍 Ottawa, ON | 📞 +1-647-835-9523</p>
+            <!-- <p className='text-sm'>📍 Ottawa, ON | 📞 +1-647-835-9523</p> -->
           </motion.div>
         </section>
       </main>
